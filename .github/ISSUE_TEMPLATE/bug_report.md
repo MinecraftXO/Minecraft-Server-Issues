@@ -1,7 +1,7 @@
 ---
 name: 🐛 Bug 反馈
 about: 报告你在服务器中遇到的任何问题
-title: "[Bug] 请在这里简短描述问题"
+title: "[Bug]"
 labels: bug
 ---
 
