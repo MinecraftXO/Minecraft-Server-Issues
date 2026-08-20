@@ -1,23 +1,18 @@
+---
 name: 💡 新功能建议
-description: 为服务器提出一个新的玩法或功能建议
+description: 为项目提出一个新的想法或功能
 title: "[Feature]: "
 labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
-        感谢你对服务器发展的关心！请详细描述你的想法。
+        感谢你的建议！请尽可能详细地描述你的想法。
   - type: textarea
-    id: related-problem
+    id: description
     attributes:
-      label: 你的建议是否与某个问题有关？
-      description: 请简单描述一下现状。
-    validations:
-      required: false
-  - type: textarea
-    id: solution
-    attributes:
-      label: 描述你想要的解决方案
-      description: 你希望增加什么插件？修改什么规则？越详细越好。
+      label: 描述你的想法
+      description: 你希望增加什么功能？它解决了什么问题？
     validations:
       required: true
+---
