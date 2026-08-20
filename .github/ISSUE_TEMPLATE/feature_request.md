@@ -4,16 +4,5 @@ about: 写下你想对服务器的新功能的描述
 title: "[Feature]"
 labels: enhancement
 ---
-body:
-  - type: markdown
-    attributes:
-      value: |
-        感谢你的建议！请尽可能详细地描述。
-  - type: textarea
-    id: description
-    attributes:
-      label: 描述你的想法
-      description: 你希望增加什么功能？它解决了什么问题？
-      placeholder: 我希望增加...
-    validations:
-      required: true
+## 📝 新功能描述（请不要删掉此行，否则忽略）
+<!-- 请详细描述要加什么，比如："我想加入XXX" -->
