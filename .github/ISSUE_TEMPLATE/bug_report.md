@@ -1,32 +1,31 @@
 ---
-name: "综合 Bug 反馈"
-description: "遇见了服务器的Bug"
-labels: [· Bug, 新提交的漏洞]
+name: 🐛 Bug 反馈
+about: 报告你在服务器中遇到的任何问题
+title: "[Bug] 请在这里简短描述问题"
+labels: bug,新提交的漏洞
 ---
-body:
-- type: checkboxes
-  id: "yml-1"
-  attributes:
-    label: "检查项"
-    description: "请逐个检查下列项目，并勾选确认。"
-    options:
-    - label: "我已在Issues 页面检查过，没有"
-      required: true
-- type: textarea
-  id: "yml-2"
-  attributes:
-    label: 描述
-    description: "详细描述该 Bug 的具体表现。"
-  validations:
-    required: true
-- type: textarea
-  id: "yml-3"
-  attributes:
-    label: 重现步骤
-    description: "详细描述要怎么操作才能再次触发这个 Bug。"
-    value: |
-      1、点击xxxx
-      2、往下滚，然后点击xxxx
-  validations:
-    required: true
-- type: textarea
+
+## 📝 问题描述
+<!-- 请详细描述发生了什么，比如："我在挖矿时突然掉线了" -->
+
+
+## 🔄 复现步骤
+<!-- 如何重现这个问题？ -->
+1. 进入服务器...
+2. 走到...
+3. 做了...
+4. 发生了错误
+
+
+## ✅ 期望的结果
+<!-- 正常情况下应该发生什么？ -->
+
+
+## 📸 截图或视频
+<!-- 如果有截图或录屏，请拖拽到这里上传，这非常有帮助！ -->
+
+
+## 💻 额外信息
+- **你的游戏ID**：
+- **发生时间**：
+- **是否使用了模组/材质包**：
