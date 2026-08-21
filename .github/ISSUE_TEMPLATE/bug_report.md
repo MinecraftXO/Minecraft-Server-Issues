@@ -1,7 +1,8 @@
-
+---
 name: "综合 Bug 反馈"
 description: "遇见了服务器的Bug"
 labels: [· Bug, 新提交的漏洞]
+---
 body:
 - type: checkboxes
   id: "yml-1"
