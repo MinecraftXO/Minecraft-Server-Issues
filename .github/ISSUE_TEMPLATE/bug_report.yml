@@ -57,3 +57,4 @@ body:
       placeholder: 例如：Player123456
     validations:
       required: true
+---
