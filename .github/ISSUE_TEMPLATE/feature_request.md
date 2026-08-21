@@ -2,7 +2,7 @@
 name: 💡 新功能反馈
 about: 写下你想对服务器的新功能的描述
 title: "[Feature]"
-labels: enhancement
+labels: enhancement,新提交的新功能
 ---
 ## 📝 新功能描述（请不要删掉此行，否则忽略）
 <!-- 请详细描述要加什么，比如："我想加入XXX" -->
