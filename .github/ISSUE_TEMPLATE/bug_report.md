@@ -7,8 +7,6 @@ body:
     attributes:
       value: |
         感谢你的反馈！为了让我们能更快地定位问题，请务必填写以下信息。
-        **(不能删此行，否则忽略)**
-
   - type: textarea
     id: description
     attributes:
