@@ -1,7 +1,9 @@
+---
 name: 🐛 问题反馈 / Bug Report
 description: 请详细描述你遇到的问题，帮助我们改进。
 title: "[Bug]: "
 labels: ["bug"]
+---
 body:
   - type: markdown
     attributes:
