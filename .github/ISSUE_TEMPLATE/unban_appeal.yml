@@ -1,0 +1,55 @@
+name:  解封申诉 / Unban Appeal
+description: 如果你认为自己被误封，或希望申请解封，请填写此表单。
+title: "[申诉]: "
+labels: ["appeal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎提交解封申诉！为了保证审核的公平与效率，请务必如实、详细地填写以下信息。
+        > **注意**：恶意申诉或提供虚假信息可能会导致申诉被永久拒绝。
+
+  - type: input
+    id: player_name
+    attributes:
+      label:  你的游戏ID (UUID)
+      description: 请准确填写你被封禁时的游戏ID（如有UUID也请一并提供）。
+      placeholder: 例如：Steve / 123e4567-e89b-12d3-a456-426614174000
+    validations:
+      required: true
+
+  - type: textarea
+    id: ban_reason
+    attributes:
+      label: ️ 你可能被封禁的原因
+      description: 请描述你目前知道的被封禁原因，或者收到的封禁提示。
+      placeholder: 例如：在聊天框发了违规链接 / 被管理员提示使用外挂...
+    validations:
+      required: true
+
+  - type: textarea
+    id: appeal_reason
+    attributes:
+      label:  申诉理由
+      description: 请详细说明为什么我们应该为你解封。如果是误封，请提供证据；如果承认违规，请说明你认识到了什么错误以及未来的保证。
+      placeholder: 请诚恳地描述你的情况...
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label:  相关证据 / 截图
+      description: 如果你有证明自己清白的截图、录像或聊天记录，请在此处上传。
+      placeholder: 点击此处拖拽上传附件...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label:  承诺与声明
+      description: 提交前请确认你已阅读服务器的相关规则。
+      options:
+        - label: 我保证以上填写的信息全部真实有效，且我已知晓服务器的相关规章制度。
+          required: true
