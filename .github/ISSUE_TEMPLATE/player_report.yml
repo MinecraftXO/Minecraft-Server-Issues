@@ -1,0 +1,56 @@
+name:  玩家举报 / Player Report
+description: 举报违规玩家（如开挂、辱骂、恶意破坏等），请提供确凿证据。
+title: "[举报]: "
+labels: ["report"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你的监督！为了维护良好的游戏环境，请尽可能详细地提供违规信息。
+        > **注意**：恶意举报或伪造证据，举报人将受到相应的处罚。
+
+  - type: input
+    id: reported_player
+    attributes:
+      label:  被举报玩家的游戏ID
+      description: 请准确填写违规玩家的ID。
+      placeholder: 例如：BadPlayer123
+    validations:
+      required: true
+
+  - type: textarea
+    id: violation_type
+    attributes:
+      label: ️ 违规行为描述
+      description: 请说明该玩家具体违反了什么规定（如：使用飞行外挂、在公屏辱骂他人、恶意炸服等）。
+      placeholder: 请详细描述违规情况...
+    validations:
+      required: true
+
+  - type: input
+    id: violation_time
+    attributes:
+      label:  违规发生的时间
+      description: 请提供大致的时间，方便管理员查阅后台日志。
+      placeholder: 例如：2026年9月11日 晚上8点左右
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label:  证据截图 / 录像
+      description: 请上传清晰的截图、录像或聊天记录作为证据（非常重要！）。
+      placeholder: 请将截图或视频拖拽到此处上传...
+    validations:
+      required: true
+
+  - type: input
+    id: reporter_id
+    attributes:
+      label:  你的游戏ID
+      description: 方便管理员在需要时向你核实情况。
+      placeholder: 例如：GoodPlayer456
+    validations:
+      required: true
