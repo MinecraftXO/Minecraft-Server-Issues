@@ -9,6 +9,13 @@ body:
     attributes:
       value: |
         感谢你的反馈！为了让我们能更快地定位问题，请务必填写以下信息。
+
+  - type: textarea
+    id: yesorno
+    attributes:
+       label: 确认你是否在issue搜索过，没有类似Bug或意义相同的Bug
+       description: 已搜索请写“Yes”，否则为no
+       placeholder: 请输入文本...
   - type: textarea
     id: description
     attributes:
@@ -45,9 +52,9 @@ body:
     attributes:
       label: 📷 截图或视频
       description: 如果有截图或录屏，请拖拽到这里上传，这非常有帮助！
-      placeholder: (可选) 点击此处上传附件...
+      placeholder: 把附件上传至此
     validations:
-      required: false
+      required: true
 
   - type: input
     id: game_id
