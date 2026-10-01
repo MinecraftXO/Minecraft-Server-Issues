@@ -1,0 +1,64 @@
+name:  找回账号 / Account Recovery
+description: 如果你忘记了密码、丢失了账号或被盗号，请填写此表单申请找回。
+title: "[找回账号]: "
+labels: ["account-recovery"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        为了保障你的账号安全，请尽可能详细地提供账号相关信息。
+        > **注意**：管理员会严格核实身份，请确保提供的信息真实有效。恶意盗取他人账号将面临永久封禁。
+
+  - type: input
+    id: player_name
+    attributes:
+      label:  你的游戏ID
+      description: 请准确填写你需要找回的账号的游戏ID。
+      placeholder: 例如：Steve
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label:  账号丢失的原因
+      description: 请选择你目前遇到的情况。
+      options:
+        - 忘记了密码
+        - 忘记了绑定的邮箱
+        - 账号被盗（密码被修改）
+        - 其他原因
+    validations:
+      required: true
+
+  - type: textarea
+    id: account_details
+    attributes:
+      label:  账号绑定信息
+      description: 请提供你记得的账号绑定信息（如：绑定的邮箱、QQ号、手机号等）。
+      placeholder: 例如：绑定的邮箱是 xxx@qq.com...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proof_of_ownership
+    attributes:
+      label:  账号归属证明
+      description: 请提供能证明你是号主的证据（非常重要！）。
+      placeholder: |
+        例如：
+        1. 历史充值记录截图（微信/支付宝账单）
+        2. 曾经使用过的密码
+        3. 账号注册时间或常登录的IP
+    validations:
+      required: true
+
+  - type: input
+    id: contact_info
+    attributes:
+      label:  联系方式
+      description: 请留下你的QQ号或电子邮箱，方便管理员核实后联系你。
+      placeholder: 例如：QQ: 123456789 / Email: example@email.com
+    validations:
+      required: true
