@@ -8,6 +8,12 @@ body:
       value: |
         "感谢你的建议！请尽可能详细地描述你的想法。"
   - type: textarea
+    id: yesorno
+    attributes:
+       label: 确认你是否在issue搜索过，没有类似Bug或意义相同的Bug
+       description: 已搜索请写“Yes”，否则为no
+       placeholder: 请输入文本...
+  - type: textarea
     id: description
     attributes:
       label: "描述你的想法"
