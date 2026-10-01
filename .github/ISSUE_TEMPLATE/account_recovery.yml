@@ -59,6 +59,6 @@ body:
     attributes:
       label:  联系方式
       description: 请留下你的QQ号或电子邮箱，方便管理员核实后联系你。
-      placeholder: 例如：QQ: 123456789 or Email: example@email.com
+      placeholder: "例如：QQ: 123456789 or Email: example@email.com"
     validations:
       required: true
