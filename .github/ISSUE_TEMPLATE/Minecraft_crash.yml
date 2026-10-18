@@ -16,9 +16,8 @@ body:
       label: ️ 崩溃发生的环境
       description: 请选择游戏崩溃时所在的端。
       options:
-        - 客户端 (Client)
-        - 服务端 (Server)
-        - 启动器界面 (Launcher)
+        - 客户端 (Client)*意思是你在游玩单人存档时出现了错误*
+        - 服务端 (Server)*意思是你在游玩我们的服务器时出现了错误*
     validations:
       required: true
 
