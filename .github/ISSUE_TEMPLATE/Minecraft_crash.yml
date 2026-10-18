@@ -44,9 +44,8 @@ body:
       label: ️ 崩溃发生的环境
       description: 请选择游戏崩溃时所在的端。
       options:
-        - 客户端 (Client)
-        - 服务端 (Server)
-        - 启动器界面 (Launcher)
+        - 客户端 (Client)*玩单人崩*
+        - 服务端 (Server)*玩服务器崩*
     validations:
       required: true
 
