@@ -1,0 +1,108 @@
+name:  Minecraft 崩溃报告
+description: 游戏闪退、崩溃或无法启动？请提交此表单并提供相关日志。
+title: "[Crash]: "
+labels: ["crash"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        游戏崩溃确实很让人头疼！为了帮助开发者快速定位并修复问题，请务必按照提示提供详细的环境信息和日志文件。
+        > **提示**：如果没有日志文件，我们可能很难找到崩溃的根本原因哦。
+
+  - type: dropdown
+    id: crash_environment
+    attributes:
+      label: ️ 崩溃发生的环境
+      description: 请选择游戏崩溃时所在的端。
+      options:
+        - 客户端 (Client)
+        - 服务端 (Server)
+        - 启动器界面 (Launcher)
+    validations:
+      required: true
+
+  - type: input
+    id: mc_version
+    attributes:
+      label:  Minecraft 版本
+      description: 请准确填写发生崩溃的 MC 版本号。
+name:  Minecraft 崩溃报告
+description: 游戏闪退、崩溃或无法启动？请提交此表单并提供相关日志。
+title: "[Crash]: "
+labels: ["crash"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        游戏崩溃确实很让人头疼！为了帮助开发者快速定位并修复问题，请务必按照提示提供详细的环境信息和日志文件。
+        > **提示**：如果没有日志文件，我们可能很难找到崩溃的根本原因。
+
+  - type: dropdown
+    id: crash_environment
+    attributes:
+      label: ️ 崩溃发生的环境
+      description: 请选择游戏崩溃时所在的端。
+      options:
+        - 客户端 (Client)
+        - 服务端 (Server)
+        - 启动器界面 (Launcher)
+    validations:
+      required: true
+
+  - type: input
+    id: mc_version
+    attributes:
+      label:  Minecraft 版本
+      description: 请准确填写发生崩溃的 MC 版本号。
+      placeholder: 例如：1.20.1 / 1.16.5(我们服务端用的是1.20.1,如有安装ViaFabric,请提前告知！
+    validations:
+      required: true
+
+  - type: input
+    id: mod_loader
+    attributes:
+      label: ️ Mod 加载器及版本
+      description: 如果使用了 Mod，请填写加载器名称及版本。如果没有使用，请填写“无”。
+      placeholder: 例如：Forge 47.2.0 / Fabric 0.14.21 / 无
+    validations:
+      required: true
+
+  - type: textarea
+    id: crash_description
+    attributes:
+      label:  崩溃前的操作
+      description: 请描述在崩溃前你做了什么，或者崩溃时游戏有什么异常表现。
+      placeholder: 例如：“刚进入服务器加载到一半就闪退了” / “安装新Mod后无法启动”
+    validations:
+      required: true
+
+  - type: textarea
+    id: log_content
+    attributes:
+      label:  崩溃报告 / 日志内容
+      description: 请将错误日志的.zip文件拖到这里
+      placeholder: 复制日志内容并粘贴到此处...
+    validations:
+      required: true
+
+  - type: textarea
+    id: log_file
+    attributes:
+      label:  完整日志文件上传
+      description: 如果日志太长无法粘贴，请直接拖拽上传 `.log` 或 `.txt` 文件。
+      placeholder: 提交
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label:  提交前确认
+      description: 请勾选以下选项，确保你已提供足够的信息。
+      options:
+        - label: 我已提供崩溃报告或最新的日志文件。
+          required: true
+        - label: 我确认我的 Mod 版本与 MC 版本是匹配的。
+          required: true
